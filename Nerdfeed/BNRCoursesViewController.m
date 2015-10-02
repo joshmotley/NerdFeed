@@ -10,7 +10,7 @@
 
 @interface BNRCoursesViewController ()
 @property (nonatomic) NSURLSession *session;
-
+@property (nonatomic, copy) NSArray *courses;
 
 @end
 
@@ -40,6 +40,8 @@
         
         NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
         _session = [NSURLSession sessionWithConfiguration:config delegate:nil delegateQueue:nil];
+        
+        
         
         [self fetchfeed];
         
@@ -79,8 +81,12 @@
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
     
     NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:req completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        NSString *json = [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
-        NSLog(@"%@", json);
+        NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+    
+        self.courses = jsonObject[@"courses"];
+        NSLog(@"%@", self.courses);
+        
+        
     }];
     
     [dataTask resume];
