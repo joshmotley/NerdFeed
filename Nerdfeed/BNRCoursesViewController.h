@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface BNRCoursesViewController : UITableViewController
-
+@property (nonatomic)WebViewController *webViewController;
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2623AD541BBF825500EE4774 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2623AD531BBF825500EE4774 /* WebViewController.m */; };
 		26AE2B171BBDE88600D34CB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AE2B161BBDE88600D34CB2 /* main.m */; };
 		26AE2B1A1BBDE88600D34CB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AE2B191BBDE88600D34CB2 /* AppDelegate.m */; };
 		26AE2B1D1BBDE88600D34CB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26AE2B1C1BBDE88600D34CB2 /* ViewController.m */; };
@@ -26,6 +27,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2623AD521BBF825500EE4774 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		2623AD531BBF825500EE4774 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		26AE2B111BBDE88600D34CB2 /* Nerdfeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nerdfeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26AE2B151BBDE88600D34CB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26AE2B161BBDE88600D34CB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 				26AE2B191BBDE88600D34CB2 /* AppDelegate.m */,
 				26AE2B3A1BBDEDC900D34CB2 /* BNRCoursesViewController.h */,
 				26AE2B3B1BBDEDC900D34CB2 /* BNRCoursesViewController.m */,
+				2623AD521BBF825500EE4774 /* WebViewController.h */,
+				2623AD531BBF825500EE4774 /* WebViewController.m */,
 				26AE2B1B1BBDE88600D34CB2 /* ViewController.h */,
 				26AE2B1C1BBDE88600D34CB2 /* ViewController.m */,
 				26AE2B211BBDE88600D34CB2 /* Images.xcassets */,
@@ -217,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26AE2B1D1BBDE88600D34CB2 /* ViewController.m in Sources */,
+				2623AD541BBF825500EE4774 /* WebViewController.m in Sources */,
 				26AE2B1A1BBDE88600D34CB2 /* AppDelegate.m in Sources */,
 				26AE2B3C1BBDEDC900D34CB2 /* BNRCoursesViewController.m in Sources */,
 				26AE2B171BBDE88600D34CB2 /* main.m in Sources */,
@@ -397,6 +403,7 @@
 				26AE2B361BBDE88700D34CB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26AE2B371BBDE88700D34CB2 /* Build configuration list for PBXNativeTarget "NerdfeedTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +412,7 @@
 				26AE2B391BBDE88700D34CB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

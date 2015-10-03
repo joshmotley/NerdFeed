@@ -7,10 +7,12 @@
 //
 
 #import "BNRCoursesViewController.h"
+#import "WebViewController.h"
 
 @interface BNRCoursesViewController ()
 @property (nonatomic) NSURLSession *session;
 @property (nonatomic, copy) NSArray *courses;
+
 
 @end
 
@@ -97,6 +99,14 @@
     
     [dataTask resume];
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    
+    
+}
+
 
 
 
